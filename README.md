@@ -1,4 +1,4 @@
-Automated ELK Stack Deployment
+### Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
 
@@ -19,7 +19,7 @@ This document contains the following details:
 - How to Use the Ansible Build
 
 
-Description of the Topology
+## Description of the Topology
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
@@ -40,7 +40,7 @@ The configuration details of each machine may be found below.
 | Web-2    | Server   | 10.0.0.6   | Linux            |
 | ELK      | Monitor  | 10.1.0.6   | Linux            |
 
-Access Policies
+## Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
 
@@ -58,7 +58,7 @@ A summary of the access policies in place can be found in the table below.
 | Web-2    | No                  | 10.0.0.1-8           |
 | Elk      | No                  | 10.0.0.1-8           |
 
-Elk Configuration
+## Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 - There will always be human error and it is the greatest risk in these processes. Using automation simplifies the process when using our ansible playbook. The ansible playbook will update all the applicalbe machines. 
@@ -74,7 +74,7 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ![TODO: Update the path with the name of your screenshot of docker ps output](Images/Dockerps.png)
 
-Target Machines & Beats
+## Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 - Web-1 10.0.0.5
 - Web-2 10.0.0.6
@@ -87,7 +87,7 @@ These Beats allow us to collect the following information from each machine:
 - Filebeat collects data about the file system. It will detect changes in files and forward the information to our ELK. 
 - Metricbeat collects metrics from the system. It will send metrics regarding the stae of the VM's and forward the information to our ELK.
 
-Using the Playbook
+## Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
